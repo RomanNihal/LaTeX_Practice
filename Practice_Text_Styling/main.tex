@@ -1,6 +1,17 @@
 \documentclass{article}
-\usepackage{amsmath}
+\usepackage{amsmath,amsthm,amsfonts}
 \usepackage{graphicx} % Required for inserting images
+
+\newtheorem{theorem}{Theorem}[section] %to add section number to the theorem number
+
+\newtheorem{new}{new}[theorem]
+
+\newcommand{\cv}[2]{\begin{bmatrix}
+#1\\
+#2\\
+\end{bmatrix}}
+
+\newcommand{\R}{\mathbb{R}}
 
 \title{Practice Text Styling}
 \author{Md. Roman Nihal}
@@ -73,4 +84,31 @@ the table \ref{er}
 \end{figure}
 
 the image \ref{w}
+
+\begin{theorem}
+    My name is roman nihal
+\end{theorem}
+
+\begin{proof}
+    yeaaaaaa
+\end{proof}
+
+\begin{theorem}
+[Name]
+    My name is roman nihal
+\end{theorem}
+
+\begin{new}
+    dot dot dot
+\end{new}
+
+the real numbers  $\mathbb{R}$
+the real numbers  $\R$
+
+\[\begin{bmatrix}
+a\\
+b\\
+\end{bmatrix}\]
+
+$\cv{1}{2}$
 \end{document}
