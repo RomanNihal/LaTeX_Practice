@@ -1,5 +1,7 @@
-\documentclass{report}
+\documentclass[twoside]{report}
 \usepackage{graphicx} % Required for inserting images
+\usepackage{geometry}
+\usepackage{lipsum}
 
 \title{Practice Thesis Writing\\
 {\Large GUB}}
@@ -7,7 +9,12 @@
 \date{March 2024}
 
 \begin{document}
-
+\newgeometry{
+top=0.75in ,
+bottom=0.75in,
+outer=0.75in,
+inner=1.5in,
+}
 \maketitle
 
 \chapter*{Abstract}
@@ -20,11 +27,14 @@ My ID is 211902003
 Course: Anything
 
 \tableofcontents
+\listoffigures
 
 \include{ch.Code}
 \include{ch.algo}
 \include{ch.con}
 \appendix
 \include{ch.apendix}
+\bibliographystyle{plain}
+\bibliography{ref}
 
 \end{document}

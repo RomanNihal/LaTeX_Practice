@@ -1,0 +1,48 @@
+\documentclass{report}
+\usepackage{lipsum}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{multirow}
+
+\title{IDP Lab 3}
+\author{Md. Roman Nihal}
+\date{March 2024}
+
+\begin{document}
+
+\maketitle
+\pagenumbering{gobble}
+\tableofcontents
+\listoffigures
+\newpage
+\pagenumbering{arabic}
+\counterwithout{section}{chapter}
+\section{Introduction}
+\lipsum[1-2]
+
+\section{Documentation}
+https://mirror.niser.ac.in/ctan/macros/latex/required/tools/array.pdf
+\begin{table}[h]
+    \centering
+    \begin{tabular}{
+    | >{\RaggedRight}p{3cm} 
+    | >{\centering}p{3cm} 
+    | >{\centering\arraybackslash}p{3cm} 
+    |}
+        \hline
+        \textbf{Data 1} & \multicolumn{2}{c|}{\textbf{Data 2}} \\\hline
+        \multirow{2}{4em}{Data} & Data 4 & Data \\\cline{2-3}
+         & Data 6 & Data \\\hline
+    \end{tabular}
+    \caption{This is a table}
+    \label{tab:my_label}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.2\textwidth]{wow.jpg}
+    \caption{Ludo}
+    \label{fig:enter-label}
+\end{figure}
+\end{document}

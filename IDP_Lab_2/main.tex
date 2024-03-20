@@ -1,0 +1,57 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{blindtext}
+\usepackage{lipsum}
+\setcounter{secnumdepth}{5}
+
+\title{IDP Lab 2}
+\author{Md. Roman Nihal}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\pagenumbering{gobble}
+\pagenumbering{arabic}
+\newpage
+\chapter*{one}
+\counterwithout{section}{chapter}
+\section{Introduction}
+My name is Roman Niahl. My ID is 211902003.\blindtext
+\section{Motivation}
+\lipsum[1-5]
+\subsection{sayem}
+\textbf{My name is Sayem}
+\subsection{Sadik}
+\addcontentsline{toc}{section}{211902020}
+\subsubsection{211902020}
+\paragraph{jskfh}
+\subparagraph{dhsf}
+
+\begin{enumerate}
+    \item os
+    \item web
+    \item idp
+\end{enumerate}
+
+\begin{itemize}
+    \item[\dots] os % for 3 dots
+    \item[\#] web % to print #
+    \item[\textbackslash] idp % to print \
+\end{itemize}
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+         1&2  \\\hline
+         3&4  \\\hline
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+\textbf{adgsajcskahciusajdoj}
+
+\end{document}
