@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{biblatex}
+\addbibresource{ref.bib}
+
+\title{CLP 1}
+\author{Md. Roman Nihal}
+\date{March 2024}
+
+\begin{document}
+
+\maketitle
+\listoftables
+
+\section{Introduction}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+       \textbf{Paper No} & \textbf{Equations} & \textbf{Ref}\\\hline
+       paper 1 & $\left(\frac{4}{5}+6\right)^2=?$ & from\cite{el2015machine}\\\hline
+       paper 2 & $T^2=\sqrt{5+x}$ & from\cite{jordan2015machine}\\\hline
+       paper 3 & $limit_{n\to\infty}$ & from\cite{mitchell1990machine}\\\hline
+    \end{tabular}
+    \caption{Ref Table}
+    \label{tab:my_label}
+\end{table}
+
+\printbibliography
+%\bibliographystyle{plain}
+%\bibliography{ref}
+
+\end{document}
